@@ -5,7 +5,7 @@ Ce script permet de déployer des serveurs sur le cloud hetzner en quelques seco
 ```mermaid
 flowchart TD
     A[script.bash] -->|1| B(Ajouter un serveur)
-    A --> |2|C(Supprimer un serveur) --> J(lis tous les fichiers server_output_SERVERID.json) --> K(suppression du serveur dans le cloud) 
+    A --> |2|C(Supprimer un serveur) --> J(lis tous les fichiers server_output_SERVERID.json) --> |sélection de l'id|K(suppression du serveur dans le cloud) 
     K --> L(supprime le fichier server_output_SERVERID.json)
     L --> A
     A --> |3|D(Quitter)
